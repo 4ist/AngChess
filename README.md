@@ -11,7 +11,7 @@ The chess aspect of the application was designed to replicate the functionality 
 
 ![](https://github.com/4ist/AngChess/blob/master/screenshots/pinkPurp.PNG)
 
-The two graveyard pannels on the right populate as the game progresses 
+The two graveyard panels on the right populate as the game progresses 
 
 ![](https://github.com/4ist/AngChess/blob/master/screenshots/showGraveyard.PNG)
 ![](https://github.com/4ist/AngChess/blob/master/screenshots/zoomGraveyard.PNG)
