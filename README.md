@@ -27,3 +27,7 @@ The code is generally structured according to the following UML diagram:
 
 ![](https://github.com/4ist/AngChess/blob/master/screenshots/UML.PNG)
 
+
+Current bugs:
+
+There are some detected 'errors' where I reference attributes of arbitrary objects. Typescript alerts that the generic object types I am referncing do not have these attributes, but the secific objects actually do. The code functions as intended, however I need to figure out another workaround because these errors sometimes get in the way of compilation. If compiling from command line, I have to comment out a few lines in board.component.ts and sidebar.component.ts, compile, then uncomment/save the lines
