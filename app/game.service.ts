@@ -102,6 +102,7 @@ export class GameService {
     }
     this.wGrave = [];
     this.bGrave = [];
+    this.moveHistory = [];
     console.log("Board was reset");
 
   }
@@ -153,15 +154,12 @@ export class GameService {
         }
       }
       
-      
-
       console.log(lastMove);
       //lastMove = [srcTile, srcPiece, dstTile, dstPiece]
       this.boardState[lastMove[0]] = lastMove[1];
       this.boardState[lastMove[2]] = lastMove[3];
     }
   }
-
 
   adminFillGrave() {
 
@@ -176,23 +174,6 @@ export class GameService {
                   "\u265B", "\u265A"];
 
   }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
