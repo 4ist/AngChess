@@ -15,6 +15,5 @@ Users can input their own custom themes or generate random themes
 
 
 
-
-
+There are a few game tools to allow correction for user error
 ![](https://github.com/4ist/AngChess/blob/master/screenshots/toolsNav.PNG)
