@@ -21,5 +21,7 @@ The goal of this application was to gain experience with Angular, as I had littl
 
 The chess aspect of the application was designed to replicate the functionality of a real life chess board, i.e. there is no rule implementation. I originally intended to add game rules, but decided that it would distract me from my original goal of front-end familiarization. 
 
-#TODO code organization visualization
+The code is generally structured according to the following UML diagram:
+
+![](https://github.com/4ist/AngChess/blob/master/screenshots/UML.PNG)
 
