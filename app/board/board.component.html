@@ -1,0 +1,18 @@
+
+
+<div class="chessboard">
+  
+  <div class="tiles" id="tiles">
+    <div *ngFor='let loop of counter(64) ;let i= index'>
+      <label>
+
+        <input type="checkbox" (click)="select(this.serv.ids[i])" />
+        <span [class]=getTileColor(i) [id]=this.serv.ids[i]>{{this.serv.boardState[this.serv.ids[i]]}}</span>
+
+      </label>
+    </div>
+  </div>
+</div>
+
+
+

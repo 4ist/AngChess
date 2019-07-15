@@ -1,0 +1,94 @@
+:root {
+  --light: #FFE5D4;
+  --dark: #BFD3C1;
+}
+.chessboard {
+  width: 640px;
+  height: 640px;
+  margin: 20px;
+  border: 25px solid #333;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-top: 75px;
+  margin-right: auto;
+  overflow: hidden;
+  /*float: none;*/
+}
+
+.selected {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: #AA0055;
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.pieceFont {
+  font-size: 40px;
+  text-align: center;
+}
+
+.tileLabel {
+  font-size: 12px;
+  text-align: left;
+  vertical-align: text-bottom;
+}
+
+.tiles input {
+  display: none;
+}
+
+.tiles .white {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: var(--light);
+  /*color: var(--dark);*/
+  transition: 0.5s;
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  display: grid;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tiles input:checked + .white {
+  -moz-box-shadow: inset 0 0 10px #311B0B;
+  -webkit-box-shadow: inset 0 0 10px #311B0B;
+  box-shadow: inset 0 0 10px #311B0B;
+  /*background: #EFD6D2;*/
+}
+
+.tiles .black {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: var(--dark);
+  /*color: var(--light);*/
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 0.5s;
+}
+
+.tiles input:checked + .black {
+  -moz-box-shadow: inset 0 0 30px #311B0B;
+  -webkit-box-shadow: inset 0 0 30px #311B0B;
+  box-shadow: inset 0 0 30px #311B0B;
+  /*background: #68A691;*/
+}
+
