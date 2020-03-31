@@ -9,7 +9,7 @@ import { GameService } from "../game.service";
 })
 export class GraveyardComponent implements OnInit {
   counter = Array;
-  constructor(private serv: GameService) { }
+  constructor(public serv: GameService) { }
 
   ngOnInit() {
   }
