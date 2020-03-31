@@ -16,14 +16,14 @@ export class SidebarComponent implements OnInit {
   currentThemeView = "";
   loopingThemes = false;
 
-  constructor(private serv: GameService) {}
+  constructor(serv: GameService) {}
 
   ngOnInit(): void { }
 
   toggleNav(nav, view, navLabel) {
     console.log("nav:" + nav + " last nav:" + this.currentMenuNav);
     console.log("view:" + view + " last view:" + this.currentMenuView);
-   
+
     if (nav == this.currentMenuNav) {
       document.getElementById(this.currentMenuView).hidden = true;
       this.currentMenuNav = "";
@@ -53,7 +53,7 @@ export class SidebarComponent implements OnInit {
   closeNav(nav) {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("sidebar").style.marginLeft = "0px";
-    document.getElementById(nav).style.backgroundColor = 'var(--light)'; 
+    document.getElementById(nav).style.backgroundColor = 'var(--light)';
 
     //close themes also
     this.themeOpened = false;
@@ -76,11 +76,11 @@ export class SidebarComponent implements OnInit {
         console.log("close current menu");
         this.closeThemeMenu(this.currentThemeView, label);
         this.currentThemeView = container;
-        
+
       }
       console.log("opening new menu");
       this.currentThemeView = container;
-      this.openThemeMenu(container, label); 
+      this.openThemeMenu(container, label);
     }
   }
 
@@ -122,14 +122,14 @@ export class SidebarComponent implements OnInit {
     var dmin = 50
     var dmax = 150;
 
-    var lr = Math.floor(Math.random() * (+lmax - +lmin) + +lmin).toString(16); 
-    var lg = Math.floor(Math.random() * (+lmax - +lmin) + +lmin).toString(16); 
-    var lb = Math.floor(Math.random() * (+lmax - +lmin) + +lmin).toString(16); 
+    var lr = Math.floor(Math.random() * (+lmax - +lmin) + +lmin).toString(16);
+    var lg = Math.floor(Math.random() * (+lmax - +lmin) + +lmin).toString(16);
+    var lb = Math.floor(Math.random() * (+lmax - +lmin) + +lmin).toString(16);
     var light = "#" + lr + lg + lb;
-    
-    var dr = Math.floor(Math.random() * (+dmax - +dmin) + +dmin).toString(16); 
-    var dg = Math.floor(Math.random() * (+dmax - +dmin) + +dmin).toString(16); 
-    var db = Math.floor(Math.random() * (+dmax - +dmin) + +dmin).toString(16); 
+
+    var dr = Math.floor(Math.random() * (+dmax - +dmin) + +dmin).toString(16);
+    var dg = Math.floor(Math.random() * (+dmax - +dmin) + +dmin).toString(16);
+    var db = Math.floor(Math.random() * (+dmax - +dmin) + +dmin).toString(16);
     var dark = "#" + dr + dg + db;
 
     this.setTheme(light, dark);
@@ -149,7 +149,7 @@ export class SidebarComponent implements OnInit {
       document.getElementById("loopTheme").style.color = "#818181";
     }
   }
-  
+
   loopTheme() {
     console.log('loopem');
     setTimeout(() => {
@@ -158,7 +158,7 @@ export class SidebarComponent implements OnInit {
         this.loopTheme();
       }
     }, 5000);
-  } 
+  }
 
 
 
