@@ -1,0 +1,15 @@
+
+
+.mainMenu {
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  background-color: var(--dark);
+  position: fixed;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+  text-align: center;
+}

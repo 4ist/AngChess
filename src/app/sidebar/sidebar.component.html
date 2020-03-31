@@ -1,0 +1,53 @@
+
+
+
+<div class="sideBar" id="sidebar">
+  <div id="navBar">
+    <br />
+    <span id="gameToolsNav" class="gameToolsNav" style="font-size:30px;cursor:pointer" (click)="toggleNav('gameToolsNav', 'gameTools', 'Tools')">
+      <label>&#9776;</label>
+    </span>
+
+    <br />
+    <span id="themeToolsNav" class="themeToolsNav" style="font-size:30px;cursor:pointer" (click)="toggleNav('themeToolsNav', 'themeTools', 'Themes')">
+      <label>T</label>
+    </span>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <div class="navLabel">
+      <label id="navLabel" ></label>
+    </div>
+
+    <div id="gameTools" hidden>
+      <a href="#" (click)="this.serv.undo()">Undo</a>
+      <a href="#" (click)="this.serv.reset()">Reset</a>
+    </div>
+
+    <div id="themeTools" hidden>
+
+      <!-- If I decide to add in preset themes I'll flesh out the following sub component -->
+      <!--<a href="#" id="openthemePresets" (click)="toggleThemes('themePresets', 'openthemePresets')">Preset</a>
+      <div id="themePresets" class="themeItems">
+        <label href="#" class="hexLabel">gimme the presets</label>
+      </div>-->
+
+      <a href="#" id="openThemes" (click)="toggleThemes('themeItems', 'openThemes')">Custom</a>
+      <div id="themeItems" class="themeItems">
+
+        <label href="#" class="hexLabel">Light color  </label>
+        <input type="color" value="#BFD3C1" id="lightTxt" size="3" maxlength="6" value="">
+        <br>
+
+        <label href="#" class="hexLabel">Dark color  </label>
+        <input type="color" value="#FFE5D4" id="darkTxt" size="3" maxlength="6" value="">
+        <br>
+
+        <a href="#" (click)='this.setCustomTheme()'>Set</a>
+      </div>
+
+      <a href="#" (click)="this.setRandomTheme()">Random</a>
+      <a href="#" id="loopTheme" (click)="this.toggleLoopTheme()">Loop</a>
+    </div>
+  </div>
+</div>

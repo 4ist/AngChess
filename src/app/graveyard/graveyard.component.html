@@ -1,0 +1,25 @@
+<div class="graveyard">
+
+  <div class="wGrave">
+  <div class="piece" *ngFor='let piece of this.serv.wGrave.sort()'>
+    <label>{{piece}}</label>
+  </div>
+</div>
+
+
+  <div class="bGrave">
+    
+    <div class="piece" *ngFor='let piece of this.serv.bGrave.sort()'>
+      <label>{{piece}}</label>
+    </div>
+  </div>
+
+  <!--<div *ngFor='let loop of counter(16) ;let i= index'>
+    <label>
+      <span [class]=getTileColor(i)>{{this.serv.wgrave.sort()[i]}}</span>
+
+    </label>
+  </div>-->
+
+
+</div>
