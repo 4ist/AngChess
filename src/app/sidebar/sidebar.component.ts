@@ -16,7 +16,7 @@ export class SidebarComponent implements OnInit {
   currentThemeView = "";
   loopingThemes = false;
 
-  constructor(serv: GameService) {}
+  constructor(public serv: GameService) {}
 
   ngOnInit(): void { }
 
