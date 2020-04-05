@@ -38,6 +38,8 @@ None detected at the moment; there was previously a nodeList iterator error but 
 
 # TODO:
 
-I do not currently intend to expand this project more, as it has already met its purpose. 
-If I were to expand this project, I would implement the backend game logic of chess. I have done this recently in Java and used similar data structures as this project, so it would be fairly trivial. 
-I also might try hosting this on my home PC(whenever I get a domain) to play around with routing. 
+I do not intend to expand the functionality of this app any further, however I am using it as a demo app to host on a github pages site, as well as routing my personal domain to this site.
+
+Tutorial I used to host the app on github pages: ![Alligator.io](https://alligator.io/angular/deploying-angular-app-github-pages/)
+Tutorial I am currently using to route my domain to the github page sire: ![Dev.to](https://dev.to/rightfrombasics/connecting-namecheap-domain-with-github-pages-3nn6)
+
