@@ -40,7 +40,7 @@ None detected at the moment; there was previously a nodeList iterator error but 
 
 I do not intend to expand the functionality of this app any further, however I am using it as a demo app to host on a github pages site, as well as routing my personal domain to this site.
 
-Tutorial I used to host the app on github pages: ![Alligator.io](https://alligator.io/angular/deploying-angular-app-github-pages/)
+Tutorial I used to host the app on github pages: [Alligator.io](https://alligator.io/angular/deploying-angular-app-github-pages/)
 
-Tutorial I am currently using to route my domain to the github page sire: ![Dev.to](https://dev.to/rightfrombasics/connecting-namecheap-domain-with-github-pages-3nn6)
+Tutorial I am currently using to route my domain to the github page sire: [Dev.to](https://dev.to/rightfrombasics/connecting-namecheap-domain-with-github-pages-3nn6)
 
